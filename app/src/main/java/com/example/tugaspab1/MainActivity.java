@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         kelompok =findViewById(R.id.bAnggota);
     }
 
+    // test komen
     public void aAnggota(View view) {
         startActivity(new Intent(MainActivity.this,Anggota.class));
 
