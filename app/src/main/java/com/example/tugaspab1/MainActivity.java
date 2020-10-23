@@ -5,20 +5,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.util.Log;
+import android.widget.Button;
+
 public class MainActivity extends AppCompatActivity {
-    private int anggota;
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+
+    private Button kelompok ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        kelompok =findViewById(R.id.bAnggota);
     }
 
     public void aAnggota(View view) {
-        Log.d(LOG_TAG , "Button clicked ");
-
-        Intent intent = new Intent(this , Anggota.class );
+        startActivity(new Intent(MainActivity.this,Anggota.class));
 
     }
 }
